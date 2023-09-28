@@ -23,7 +23,7 @@ import geckodriver_autoinstaller
 geckodriver_autoinstaller.install()
 
 #Chat GPT API Key
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 #Load Aurduino Info
 port = "/dev/tty.usbmodem142301"
